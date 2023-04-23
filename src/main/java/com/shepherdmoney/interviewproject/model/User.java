@@ -28,14 +28,6 @@ public class User {
     private String email;
 
 
-    //Used in LoadDatabase class, remove in production/submission.
-    public User(String name, String email) {
-        this.name = name;
-        this.email = email;
-    }
-
-
-
     // Completed: User's credit card
     // HINT: A user can have one or more, or none at all. We want to be able to query credit cards by user
     //       and user by a credit card.

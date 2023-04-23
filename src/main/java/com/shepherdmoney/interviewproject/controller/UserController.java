@@ -17,17 +17,7 @@ public class UserController {
     // Completed: wire in the user repository (~ 1 line)
     @Autowired
     UserRepository userRepo;
-
-
-    /*/
-        Minor Bug: Stack overflow error when getting all users after addCreditCardToUser.
-        not an issue cause fixing get request not required.
-         */
-    @GetMapping("/users")
-    List<User> all() {
-        return userRepo.findAll();
-    }
-
+    
 
     @PutMapping("/user")
     public ResponseEntity<Integer> createUser(@RequestBody CreateUserPayload payload) {
